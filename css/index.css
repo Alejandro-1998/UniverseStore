@@ -1,33 +1,67 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
+    border-bottom: 2px solid #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Parte de arriba del header */
+.container-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* separa en tres zonas */
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
+    padding: 15px 30px;
+    background-color: #fff;
     border-bottom: 2px solid #f0f0f0;
 }
 
 .logo {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #e53935; /* rojo */
 }
 
-input[type="text"] {
-    padding: 5px;
+.logo span {
+    color: #333; /* negro/gris oscuro */
+}
+
+/* Buscador */
+.container-header input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
     width: 300px;
 }
 
-.user-cart button {
-    margin-left: 10px;
-    padding: 5px 10px;
+/* Botones derecha */
+.user-cart {
+    display: flex;
+    gap: 15px;
 }
 
+.user-cart button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user-cart .cart {
+    background-color: #e53935;
+    color: white;
+}
+
+.user-cart .login {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Barra de navegación */
 nav {
     background-color: #e53935;
 }
@@ -35,77 +69,19 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    padding: 12px 0;
     margin: 0;
-    padding: 10px;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin: 0 20px;
     color: white;
     cursor: pointer;
-}
-
-.highlights {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.highlight {
-    position: relative;
-    flex: 1;
-    margin: 10px;
-    height: 200px;
-    color: white;
-    font-size: 2em;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    text-shadow: 1px 1px 4px black;
-}
-
-.buy-now {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #e53935;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-.community {
-    padding: 20px;
-    background-color: #f5f5f5;
-}
-
-.community-links {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.community-links div {
-    flex: 1;
-    text-align: center;
-    background-color: black;
-    color: white;
-    margin: 0 5px;
-    padding: 10px;
-}
-
-.featured-games {
-    display: flex;
-    gap: 10px;
-}
-
-.featured-games .game {
-    flex: 1;
-    height: 150px;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
-    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
 }
