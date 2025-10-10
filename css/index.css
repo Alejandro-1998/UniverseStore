@@ -12,21 +12,33 @@ header {
 /* Parte de arriba del header */
 .container-header {
     display: flex;
-    justify-content: space-between; /* separa en tres zonas */
+    justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background-color: #fff;
     border-bottom: 2px solid #f0f0f0;
 }
 
+/* Logo y nombre de la tienda */
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-nombre img {
+    width: 40px;
+    height: auto;
+}
+
 .logo {
     font-weight: bold;
     font-size: 1.6em;
-    color: #e53935; /* rojo */
+    color: #e53935;
 }
 
 .logo span {
-    color: #333; /* negro/gris oscuro */
+    color: #333;
 }
 
 /* Buscador */
@@ -34,29 +46,39 @@ header {
     padding: 8px 12px;
     border-radius: 20px;
     border: 1px solid #ccc;
-    width: 300px;
+    width: 600px;
 }
 
-/* Botones derecha */
-.user-cart {
+/* Botones carrito y login */
+.carrito-login {
     display: flex;
-    gap: 15px;
+    gap: 50px;
 }
 
-.user-cart button {
-    padding: 8px 16px;
+.carrito-login button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.carrito-login button {
+    width: 48px;
+    height: 48px;
     border: none;
-    border-radius: 20px;
+    border-radius: 50%;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.user-cart .cart {
+.carrito-login .carrito {
     background-color: #e53935;
     color: white;
 }
 
-.user-cart .login {
+.carrito-login .login {
     background-color: #f0f0f0;
     color: #333;
 }
@@ -75,13 +97,27 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    position: relative;
+    margin: 0 30px;
     color: white;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
-nav ul li:hover {
-    text-decoration: underline;
+nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li:hover::after,
+nav ul li.active::after { /* active para elemento seleccionado */
+    width: 100%;
 }
