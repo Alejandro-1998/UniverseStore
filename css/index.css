@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+  background-color: #f9f9f9;
+  color: #f9fafb;
+}
+
 header {
     border-bottom: 2px solid #f0f0f0;
     font-family: Arial, sans-serif;
@@ -118,6 +123,113 @@ nav ul li::after {
 }
 
 nav ul li:hover::after,
-nav ul li.active::after { /* active para elemento seleccionado */
+nav ul li.active::after {   
     width: 100%;
+}
+
+/* Banners ofertas, destacados y novedades */
+/* Contenedor principal de banners */
+.banners {
+    display: flex;
+    justify-content: center;   /* centra columnas horizontalmente */
+    align-items: flex-start;   /* alinea verticalmente la columna derecha al inicio de la izquierda */
+    gap: 20px;                 /* espacio entre columnas */
+    margin-top: 20px;
+    padding: 0 40px;           /* deja algo de margen lateral */
+    flex-wrap: wrap;           /* responsivo */
+}
+
+/* Columna izquierda con dos imágenes */
+.banners-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;                   /* ocupa proporción de ancho */
+}
+
+.banners-izquierda img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Columna derecha con imagen y título */
+.banners {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;      /* columnas con misma altura */
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 40px;
+    max-height: 450px;         /* altura total más pequeña */
+    flex-wrap: wrap;
+}
+
+/* Columna izquierda */
+.banners-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+/* Cada imagen con texto */
+.banner-con-texto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    max-height: 210px;         /* altura individual más pequeña */
+}
+
+.banners-izquierda .banner-con-texto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* se ve completa la imagen */
+    border-radius: 8px;
+}
+
+/* Columna derecha */
+.banner-derecha {
+    flex: 1.5;                  /* un poco más ancha que la izquierda */
+    display: flex;
+    justify-content: center;
+    max-height: 450px;          /* misma altura que la izquierda */
+}
+
+.banner-derecha img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Títulos sobre imágenes en esquina inferior derecha */
+.titulo-banner {
+    position: absolute;
+    bottom: 10px;                 /* esquina inferior */
+    right: 10px;                  /* margen desde la derecha */
+    font-family: Arial, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #fff;
+    padding: 6px 12px;            /* espacio interno consistente */
+    background: rgba(229, 57, 53, 0.85);
+    border-radius: 8px;
+    letter-spacing: 1px;
+    text-align: center;            /* centrado dentro del recuadro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 2;
+    display: inline-block;         /* ajusta el ancho al contenido */
+    max-width: 90%;                /* no se sale de la imagen */
+}
+
+/* Línea subrayada */
+.titulo-banner:hover::after {
+    content: '';
+    display: block;
+    margin: 4px auto 0;
+    width: 100%;                  /* toda la palabra */
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
 }
