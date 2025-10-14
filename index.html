@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alejandro Caballero Luque">
     <title>Universe Store</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Agregar iconos -->
 </head>
 
@@ -20,7 +20,7 @@
             </div>
             <!-- Barra de búsqueda -->
             <div>
-                <input type="text" placeholder="Buscar en toda la tienda">
+                <input type="text" placeholder="Buscar en toda la tienda...">
             </div>
             <!-- Botones de cesta y login -->
             <div class="carrito-login">
@@ -44,28 +44,95 @@
         </nav>
     </header>
     <main>
-        <div class="banners">
+        <section class="banners">
             <!-- Columna izquierda -->
             <div class="banners-izquierda">
-                <div class="banner-con-texto">
+                <div class="banner">
                     <img src="img/mansiones.png" alt="Ofertas">
                     <h2 class="titulo-banner">OFERTAS</h2>
                 </div>
-                <div class="banner-con-texto">
+                <div class="banner">
                     <img src="img/dyd.png" alt="Destacados">
                     <h2 class="titulo-banner">DESTACADOS</h2>
                 </div>
             </div>
 
             <!-- Columna derecha -->
-            <div class="banner-derecha banner-con-texto">
+            <div class="banner-derecha banner">
                 <img src="img/vanguard.png" alt="Novedades">
                 <h2 class="titulo-banner">NOVEDADES</h2>
             </div>
-        </div>
+        </section>
+
+        <!-- Comunidades -->
+        <section>
+            <div class="titulo-comunidad">
+                <h2>COMUNIDAD</h2>
+                <img src="img/tcg_icon.png" alt="Icono TCG">
+                <img src="img/rol_icon.png" alt="Icono Rol">
+            </div>
+
+            <!-- Imágenes comunidades -->
+            <div class="comunidades">
+                <div>
+                    <img src="img/pokemon_tcg.webp" alt="Pokémon TCG">
+                </div>
+                <div>
+                    <img src="img/magic_tcg.png" alt="Magic The Gathering">
+                </div>
+                <div>
+                    <img src="img/dyd_rol.png" alt="Dungeons & Dragons">
+                </div>
+                <div>
+                    <img src="img/cosmere_rpg.png" alt="Cosmere RPG">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
+        <div class="container-footer">
+            <!-- Columna 1: Sobre nosotros -->
+            <div>
+                <h3>Sobre Universe Store</h3>
+                <p>Tu tienda especializada en cómics, juegos de mesa, juegos de rol, TCG's y accesorios. 
+                Donde la imaginación y la estrategia se encuentran.</p>
+            </div>
 
+            <!-- Columna 2: Enlaces rápidos -->
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Córdoba, España</p>
+                <p><i class="fa-solid fa-envelope"></i> acl0040@universestore.com</p>
+                <p><i class="fa-solid fa-phone"></i> +34 111 222 333</p>
+            </div>
+
+            <!-- Columna 4: Redes sociales -->
+            <div>
+                <h3>Síguenos</h3>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Autoría -->
+        <div class="footer-bottom">
+            <p>© 2025 Universe Store — Diseñado por <strong>Alejandro Caballero Luque</strong></p>
+        </div>
     </footer>
 </body>
 

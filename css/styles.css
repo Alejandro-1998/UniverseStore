@@ -1,0 +1,346 @@
+/* ======== RESETEO GENERAL ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* ======== HEADER ======== */
+header {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* ===== Parte superior del header ===== */
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Logo y nombre */
+.logo-nombre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-nombre img {
+  width: 40px;
+  height: auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #e53935;
+}
+
+.logo span {
+  color: #333;
+}
+
+/* Buscador */
+.container-header input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: min(600px, 60vw);
+}
+
+/* Botones */
+.carrito-login {
+  display: flex;
+  gap: 20px;
+}
+
+.carrito-login button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.carrito-login button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.carrito {
+  background-color: #e53935;
+  color: white;
+}
+
+.login {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* ===== Nav ===== */
+nav {
+  background-color: #e53935;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px 0;
+}
+
+nav li {
+  position: relative;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav li:hover::after,
+nav li.active::after {
+  width: 100%;
+}
+
+/* ======== BANNERS ======== */
+.banners {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+/* Columna izquierda */
+.banners-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 480px;
+}
+
+/* Banner individual */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Columna derecha */
+.banner-derecha {
+  flex: 1.5;
+  min-width: 400px;
+  max-width: 640px;
+}
+
+/* Texto sobre imagen */
+.titulo-banner {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: white;
+  padding: 6px 12px;
+  background: rgba(229, 57, 53, 0.85);
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  display: inline-block;
+  max-width: 90%;
+}
+
+.titulo-banner:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ======== COMUNIDAD ======== */
+.titulo-comunidad {
+  background-color: #e53935;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.titulo-comunidad h2 {
+  background-color: black;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  margin-left: 40px;
+  border-radius: 4px;
+}
+
+.titulo-comunidad img {
+  width: 4.6em;
+  margin-left: 30px;
+}
+
+/* ======== COMUNIDADES ======== */
+.comunidades {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.comunidades div {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.comunidades div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.comunidades div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: black;
+  color: #f1f1f1;
+  margin-top: 10px;
+  padding-top: 40px;
+  border-top: 4px solid #e53935;
+  font-size: 0.95em;
+}
+
+/* Secciones footer */
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.container-footer div {
+  flex: 1;
+  min-width: 220px;
+}
+
+.container-footer div h3 {
+  color: #e53935;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.container-footer div p {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.container-footer div ul {
+  list-style: none;
+}
+
+.container-footer div ul li {
+  margin: 6px 0;
+}
+
+.container-footer div ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.container-footer div ul li a:hover {
+  color: #e53935;
+}
+
+/* Redes sociales */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  color: #fff;
+  background-color: #e53935;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #e53935;
+  transform: translateY(-3px);
+}
+
+/* Autoría */
+.footer-bottom {
+  text-align: center;
+  background-color: #111;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  font-size: 0.9em;
+  color: #bbb;
+}
