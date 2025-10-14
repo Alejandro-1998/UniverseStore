@@ -249,14 +249,15 @@ nav li a {
   cursor: pointer;
 }
 
-.comunidades div img {
+.comunidades a div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  min-height: 170px;
 }
 
-.comunidades div:hover {
+.comunidades a div:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
