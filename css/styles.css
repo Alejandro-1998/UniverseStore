@@ -133,6 +133,260 @@ nav li a {
   color: white;
 }
 
+/* ======== FOOTER ======== */
+footer {
+  background-color: black;
+  color: #f1f1f1;
+  margin-top: 10px;
+  padding-top: 40px;
+  border-top: 4px solid #e53935;
+  font-size: 0.95em;
+}
+
+/* Secciones footer */
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.container-footer div {
+  flex: 1;
+  min-width: 220px;
+}
+
+.container-footer div h3 {
+  color: #e53935;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.container-footer div p {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.container-footer div ul {
+  list-style: none;
+}
+
+.container-footer div ul li {
+  margin: 6px 0;
+}
+
+.container-footer div ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.container-footer div ul li a:hover {
+  color: #e53935;
+}
+
+/* Redes sociales */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  color: #fff;
+  background-color: #e53935;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #e53935;
+  transform: translateY(-3px);
+}
+
+/* Autoría */
+.footer-bottom {
+  text-align: center;
+  background-color: #111;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+/* ------ LOGIN ------*/
+
+.container-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* Sección Izquierda */
+.seccion-izquierda {
+  width: 50%;
+  background-color: #d7443e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-izquierda img {
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+.seccion-izquierda h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.seccion-izquierda h1 span {
+  color: #000;
+}
+
+/* Sección Derecha */
+.seccion-derecha {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.login-container {
+  width: 420px;
+  background: none;
+}
+
+.login h1 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #111;
+}
+
+form label {
+  font-size: 0.9rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+
+.olvidar {
+  display: block;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.btnIniciarSesion {
+  width: 100%;
+  padding: 12px;
+  background-color: #d7443e;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnIniciarSesion:hover {
+  background-color: #c63631;
+}
+
+.otraCuenta {
+  text-align: center;
+  margin: 25px 0;
+  position: relative;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.otraCuenta::before,
+.otraCuenta::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  height: 1px;
+  background: #ddd;
+}
+
+.otraCuenta::before {
+  left: 0;
+}
+
+.otraCuenta::after {
+  right: 0;
+}
+
+.redesSociales {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.social {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.social:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.social i {
+  color: #d7443e;
+}
+
+.registro {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.registro a {
+  color: #d7443e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ------ PÁGINA PRINCIPAL ------*/
+
 /* ======== BANNERS ======== */
 .banners {
   display: flex;
@@ -260,93 +514,4 @@ nav li a {
 .comunidades a div:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
-}
-
-/* ======== FOOTER ======== */
-footer {
-  background-color: black;
-  color: #f1f1f1;
-  margin-top: 10px;
-  padding-top: 40px;
-  border-top: 4px solid #e53935;
-  font-size: 0.95em;
-}
-
-/* Secciones footer */
-.container-footer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 0 40px;
-}
-
-.container-footer div {
-  flex: 1;
-  min-width: 220px;
-}
-
-.container-footer div h3 {
-  color: #e53935;
-  font-size: 1.1em;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-}
-
-.container-footer div p {
-  line-height: 1.6;
-  margin-bottom: 8px;
-}
-
-.container-footer div ul {
-  list-style: none;
-}
-
-.container-footer div ul li {
-  margin: 6px 0;
-}
-
-.container-footer div ul li a {
-  color: #f1f1f1;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.container-footer div ul li a:hover {
-  color: #e53935;
-}
-
-/* Redes sociales */
-.footer-socials {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.footer-socials a {
-  color: #fff;
-  background-color: #e53935;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.footer-socials a:hover {
-  background-color: #e53935;
-  transform: translateY(-3px);
-}
-
-/* Autoría */
-.footer-bottom {
-  text-align: center;
-  background-color: #111;
-  padding: 15px 0;
-  margin-top: 40px;
-  border-top: 1px solid #333;
-  font-size: 0.9em;
-  color: #bbb;
 }

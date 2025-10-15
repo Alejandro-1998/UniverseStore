@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alejandro Caballero Luque">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-login">
+        <div class="seccion-izquierda">
+            <img src="../img/logo.png" alt="Logo">
+            <h1>Universe<br><span>Store</span></h1>
+        </div>
+
+        <div class="seccion-derecha">
+            <div class="login-container">
+                <h1>¡Bienvenido!</h1><br><br><br><br><br>
+
+                <form>
+                    <label for="email">Correo electrónico o teléfono</label>
+                    <input type="text" id="email" placeholder="Escribe tu correo electrónico o teléfono" required>
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Escribe tu contraseña" required>
+
+                    <a href="#" class="olvidar">¿Has olvidado la contraseña?</a>
+
+                    <button onclick="window.location.href='../index.html'" class="btnIniciarSesion">Inicia sesión</button>
+
+                    <div class="otraCuenta">
+                        <span>o inicia sesión mediante otra cuenta</span>
+                    </div>
+
+                    <div class="redesSociales">
+                        <button class="social"><i class="fa-brands fa-google"></i></button>
+                        <button class="social"><i class="fa-brands fa-apple"></i></button>
+                        <button class="social"><i class="fa-brands fa-facebook-f"></i></button>
+                    </div>
+
+                    <p class="registro">
+                        ¿No tienes cuenta? <a href="#">Regístrate</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
