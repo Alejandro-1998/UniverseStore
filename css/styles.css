@@ -515,3 +515,126 @@ form input {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
+
+/* ------ PRODUCTOS CÓMICS ------*/
+
+/* MAIN - PRODUCTOS */
+.container-productos {
+  display: flex;
+  gap: 30px;
+  padding: 30px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* SIDEBAR IZQUIERDA */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.seccion-sidebar {
+  margin-bottom: 30px;
+}
+
+.seccion-sidebar h3 {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e53935;
+  color: #333;
+}
+
+.seccion-sidebar ul {
+  list-style: none;
+}
+
+.seccion-sidebar ul li {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.seccion-sidebar ul li:hover {
+  color: #e53935;
+}
+
+.seccion-sidebar label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #666;
+  cursor: pointer;
+}
+
+.seccion-sidebar input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* ÁREA DE PRODUCTOS */
+.productos {
+  flex: 1;
+}
+
+.etiquetas-pagina {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.etiquetas-pagina span {
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* GRID DE PRODUCTOS */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.tarjeta-producto {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.producto-titulo {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  min-height: 40px;
+  text-align: center;
+}
+
+.producto-precio {
+  font-size: 1.2em;
+  color: #e53935;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto;
+}
