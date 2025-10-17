@@ -389,6 +389,144 @@ form input {
   text-decoration: none;
 }
 
+/* ------ CESTA ------*/
+
+.container-carrito {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.titulo-carrito {
+  font-size: 2em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.titulo-carrito i {
+  color: #e53935;
+}
+
+/* ITEM DEL CARRITO */
+.carrito-item {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.carrito-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: #e53935;
+}
+
+.item-imagen {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-titulo {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.item-descripcion {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.item-precio {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #e53935;
+  margin-top: 10px;
+}
+
+.item-acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-quitar {
+  background: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+.btn-quitar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 57, 53, 0.4);
+}
+
+.btn-quitar:active {
+  transform: translateY(0);
+}
+
+/* BOTÓN SEGUIR COMPRANDO */
+.contenedor-boton-seguir {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-compra {
+  background: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(229, 57, 53, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-compra:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(229, 57, 53, 0.45);
+}
+
+.btn-compra:active {
+  transform: translateY(-1px);
+}
+
 /* ------ PÁGINA PRINCIPAL ------*/
 
 /* ======== BANNERS ======== */
