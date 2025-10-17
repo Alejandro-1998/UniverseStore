@@ -455,27 +455,14 @@ form input {
 
 /* ======== COMUNIDAD ======== */
 .titulo-comunidad {
-  background-color: #e53935;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.titulo-comunidad h2 {
-  background-color: black;
+  background: linear-gradient(135deg, #333 0%, #e53935 100%);
   color: white;
-  font-size: 1.1em;
-  font-weight: 800;
-  letter-spacing: 2px;
-  padding: 8px 20px;
-  margin-left: 40px;
-  border-radius: 4px;
-}
-
-.titulo-comunidad img {
-  width: 4.6em;
-  margin-left: 30px;
+  padding: 12px 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 /* ======== COMUNIDADES ======== */
@@ -519,7 +506,8 @@ form input {
 /* ------ PRODUCTOS CÓMICS ------*/
 
 /* MAIN - PRODUCTOS */
-.container-productos {
+.contenido {
+  /* Esta clase nos sirve también para las comunidades */
   display: flex;
   gap: 30px;
   padding: 30px 40px;
@@ -576,11 +564,13 @@ form input {
 }
 
 /* ÁREA DE PRODUCTOS */
-.productos {
+.contenido-area {
+  /* Esta clase nos sirve también para las comunidades */
   flex: 1;
 }
 
 .etiquetas-pagina {
+  /* Esta clase nos sirve también para las comunidades */
   font-size: 0.9em;
   color: #666;
   margin-bottom: 20px;
@@ -637,4 +627,95 @@ form input {
   font-weight: bold;
   text-align: center;
   margin-top: auto;
+}
+
+/* ------ COMUNIDAD POKÉMON ------*/
+
+/* DESCRIPCIÓN */
+.descripcion-comunidad {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.descripcion-comunidad p {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.descripcion-comunidad p:last-child {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #e53935;
+}
+
+/* SECCIÓN EVENTOS */
+.seccion-eventos {
+  margin-bottom: 30px;
+}
+
+.titulo-seccion {
+  background: linear-gradient(135deg, #333 0%, #e53935 100%);
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* GRID DE EVENTOS */
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-evento {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tarjeta-evento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.evento-imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.evento-info {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.evento-fecha {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #e53935;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
 }

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alejandro Caballero Luque">
     <title>Universe Store</title>
     <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Agregar iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Agregar iconos -->
 </head>
+
 <body>
-        <header>
+    <header>
         <!-- Logo -->
         <div class="container-header">
             <div class="logo-nombre">
@@ -42,52 +45,130 @@
         </nav>
     </header>
     <main>
-
-    </main>
-        <footer>
-            <div class="container-footer">
-                <!-- Columna 1: Sobre nosotros -->
-                <div>
-                    <h3>Sobre Universe Store</h3>
-                    <p>Tu tienda especializada en cómics, juegos de mesa, juegos de rol, TCG's y accesorios. 
-                    Donde la imaginación y la estrategia se encuentran.</p>
-                </div>
-
-                <!-- Columna 2: Enlaces rápidos -->
-                <div>
-                    <h3>Enlaces</h3>
+        <div class="contenido">
+            <!-- SIDEBAR IZQUIERDA -->
+            <aside class="sidebar">
+                <div class="seccion-sidebar">
+                    <h3>Comunidades</h3>
                     <ul>
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="#">Novedades</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li>Magic</li>
+                        <li>Yu-Gi-Oh!</li>
+                        <li>Final fantasy</li>
+                        <li>One Piece</li>
+                        <li>Cosmere</li>
+                        <li>Dragones y Mazmorras</li>
                     </ul>
                 </div>
 
-                <!-- Columna 3: Contacto -->
-                <div>
-                    <h3>Contacto</h3>
-                    <p><i class="fa-solid fa-location-dot"></i> Córdoba, España</p>
-                    <p><i class="fa-solid fa-envelope"></i> acl0040@universestore.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +34 111 222 333</p>
+                <div class="seccion-sidebar">
+                    <h3>Grupos</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-whatsapp"></i> WhatsApp</li>
+                        <li><i class="fa-brands fa-discord"></i> Discord</li>
+                        <li><i class="fa-brands fa-telegram"></i> Telegram</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- ÁREA DE CONTENIDO -->
+            <div class="contenido-area">
+                <!-- Título y Logo -->
+                <div class="etiquetas-pagina">
+                    Comunidades > <span>Pokémon</span>
                 </div>
 
-                <!-- Columna 4: Redes sociales -->
-                <div>
-                    <h3>Síguenos</h3>
-                    <div class="footer-socials">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <!-- Descripción -->
+                <div class="descripcion-comunidad">
+                    <p>Bienvenido al espacio dedicado a los entrenadores y fanáticos del Pokémon Trading Card Game. Aquí
+                        encontrarás toda la información sobre los próximos torneos, ligas y eventos especiales que
+                        tenemos en la tienda. Además, podrás unirte a nuestros grupos de WhatsApp y Discord, donde la
+                        comunidad local se organiza para jugar, mantenerse informada y seguir disfrutando de este
+                        increíble juego de cartas coleccionables.</p>
+                    <p>Revisa las fechas, únete a la conversación y prepárate para tus próximas batallas Pokémon.</p>
+                </div>
+
+                <!-- Sección de Eventos -->
+                <div class="seccion-eventos">
+                    <div class="titulo-seccion">EVENTOS</div>
+
+                    <div class="eventos-grid">
+                        <div class="tarjeta-evento">
+                            <img src="../../img/megaGardevoir.png"
+                                alt="Presentación Mega Evolution" class="evento-imagen">
+                            <div class="evento-info">Presentación Mega Evolution</div>
+                            <div class="evento-fecha">05/09</div>
+                        </div>
+
+                        <div class="tarjeta-evento">
+                            <img src="../../img/megaLucario.png"
+                                alt="Cup Pokémon" class="evento-imagen">
+                            <div class="evento-info">Cup Pokémon</div>
+                            <div class="evento-fecha">20/09</div>
+                        </div>
+
+                        <div class="tarjeta-evento">
+                            <img src="../../img/ragingBolt.png"
+                                alt="Torneo Semanal" class="evento-imagen">
+                            <div class="evento-info">Torneo Semanal</div>
+                            <div class="evento-fecha">13/09</div>
+                        </div>
+
+                        <div class="tarjeta-evento">
+                            <img src="../../img/aventureEnsemble.png"
+                                alt="Challenge Pokémon" class="evento-imagen">
+                            <div class="evento-info">Challenge Pokémon</div>
+                            <div class="evento-fecha">27/09</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Autoría -->
-            <div class="footer-bottom">
-                <p>© 2025 Universe Store — Diseñado por <strong>Alejandro Caballero Luque</strong></p>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <!-- Columna 1: Sobre nosotros -->
+            <div>
+                <h3>Sobre Universe Store</h3>
+                <p>Tu tienda especializada en cómics, juegos de mesa, juegos de rol, TCG's y accesorios.
+                    Donde la imaginación y la estrategia se encuentran.</p>
             </div>
-        </footer>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Córdoba, España</p>
+                <p><i class="fa-solid fa-envelope"></i> acl0040@universestore.com</p>
+                <p><i class="fa-solid fa-phone"></i> +34 111 222 333</p>
+            </div>
+
+            <!-- Columna 4: Redes sociales -->
+            <div>
+                <h3>Síguenos</h3>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Autoría -->
+        <div class="footer-bottom">
+            <p>© 2025 Universe Store — Diseñado por <strong>Alejandro Caballero Luque</strong></p>
+        </div>
+    </footer>
 </body>
+
 </html>
