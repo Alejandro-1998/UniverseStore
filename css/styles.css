@@ -771,6 +771,240 @@ form input {
   margin-top: auto;
 }
 
+/* ------ CÓMIC ------*/
+
+.container-producto {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* IMAGEN DEL PRODUCTO */
+.producto-imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.producto-imagen-principal {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+}
+
+.producto-imagen-principal img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* INFO DEL PRODUCTO */
+.producto-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.producto-titulo-principal {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+}
+
+.producto-precio-principal {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #e53935;
+}
+
+.producto-impuestos {
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* DISPONIBILIDAD */
+.producto-disponibilidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  background: #fff3cd;
+  border-left: 4px solid #ff9800;
+  border-radius: 8px;
+}
+
+.producto-disponibilidad i {
+  color: #ff9800;
+  font-size: 1.3em;
+}
+
+.producto-disponibilidad span {
+  font-weight: 600;
+  color: #856404;
+}
+
+/* CANTIDAD */
+.producto-cantidad {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cantidad-titulo {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cantidad-controles {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-cantidad {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(229, 57, 53, 0.3);
+}
+
+.btn-cantidad:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(229, 57, 53, 0.4);
+}
+
+.cantidad-numero {
+  font-size: 1.5em;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: center;
+}
+
+.btn-anadir {
+  flex: 1;
+  background: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(229, 57, 53, 0.35);
+}
+
+.btn-anadir:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(229, 57, 53, 0.45);
+}
+
+/* INFO ADICIONAL */
+.producto-info-adicional {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item i {
+  color: #e53935;
+  margin-right: 10px;
+  width: 20px;
+}
+
+/* DETALLES */
+.producto-detalles {
+  grid-column: 1 / -1;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.detalles-header {
+  display: flex;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.detalles-btn {
+  flex: 1;
+  padding: 18px 30px;
+  background: none;
+  border: none;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.detalles-btn.activo {
+  color: #e53935;
+}
+
+.detalles-btn.activo::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #e53935;
+}
+
+.detalles-btn:hover {
+  background: #f9f9f9;
+}
+
+.detalles-contenido {
+  padding: 30px;
+}
+
+.detalles-panel {
+  display: none;
+}
+
+.detalles-panel.activo {
+  display: block;
+}
+
+.detalles-panel p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.05em;
+}
+
 /* ------ COMUNIDAD POKÉMON ------*/
 
 /* DESCRIPCIÓN */

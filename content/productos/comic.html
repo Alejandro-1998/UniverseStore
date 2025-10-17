@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alejandro Caballero Luque">
     <title>Universe Store</title>
     <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Agregar iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Agregar iconos -->
 </head>
+
 <body>
-        <header>
+    <header>
         <!-- Logo -->
         <div class="container-header">
             <div class="logo-nombre">
@@ -42,52 +45,145 @@
         </nav>
     </header>
     <main>
+        <div class="container-producto">
+            <!-- Imagen del producto -->
+            <div class="producto-imagen-container">
+                <div class="producto-imagen-principal">
+                    <img src="../../img/ultimateXmen06.png"
+                        alt="Ultimate X-Men 06">
+                </div>
+            </div>
 
-    </main>
-        <footer>
-            <div class="container-footer">
-                <!-- Columna 1: Sobre nosotros -->
+            <!-- Información del producto -->
+            <div class="producto-info-container">
+                <h1 class="producto-titulo-principal">ULTIMATE X-MEN 06</h1>
+
                 <div>
-                    <h3>Sobre Universe Store</h3>
-                    <p>Tu tienda especializada en cómics, juegos de mesa, juegos de rol, TCG's y accesorios. 
-                    Donde la imaginación y la estrategia se encuentran.</p>
+                    <div class="producto-precio-principal">8,95€</div>
+                    <div class="producto-impuestos">Impuestos incluidos</div>
                 </div>
 
-                <!-- Columna 2: Enlaces rápidos -->
-                <div>
-                    <h3>Enlaces</h3>
-                    <ul>
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="#">Novedades</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
+                <!-- Disponibilidad -->
+                <div class="producto-disponibilidad">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Pocas unidades</span>
                 </div>
 
-                <!-- Columna 3: Contacto -->
-                <div>
-                    <h3>Contacto</h3>
-                    <p><i class="fa-solid fa-location-dot"></i> Córdoba, España</p>
-                    <p><i class="fa-solid fa-envelope"></i> acl0040@universestore.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +34 111 222 333</p>
+                <!-- Cantidad -->
+                <div class="producto-cantidad">
+                    <div class="cantidad-titulo">Cantidad:</div>
+                    <div class="cantidad-controles">
+                        <button class="btn-cantidad" onclick="decrementar()">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <div class="cantidad-numero" id="cantidad">1</div>
+                        <button class="btn-cantidad" onclick="incrementar()">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button class="btn-anadir">Añadir</button>
+                    </div>
                 </div>
 
-                <!-- Columna 4: Redes sociales -->
-                <div>
-                    <h3>Síguenos</h3>
-                    <div class="footer-socials">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <!-- Información adicional -->
+                <div class="producto-info-adicional">
+                    <div class="info-item">
+                        <i class="fa-solid fa-file-contract"></i>
+                        Términos y condiciones
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Garantía de devolución de 30 días
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        Envío: 2-3 días laborables
                     </div>
                 </div>
             </div>
 
-            <!-- Autoría -->
-            <div class="footer-bottom">
-                <p>© 2025 Universe Store — Diseñado por <strong>Alejandro Caballero Luque</strong></p>
+            <!-- Descripción y Detalles -->
+            <div class="producto-detalles">
+                <div class="detalles-header">
+                    <button class="detalles-btn activo" onclick="cambiarDetalles(event, 'descripcion')">Descripción</button>
+                    <button class="detalles-btn" onclick="cambiarDetalles(event, 'detalles')">Detalles del Producto</button>
+                </div>
+                <div class="detalles-contenido">
+                    <div id="descripcion" class="detalles-panel active">
+                        <p>¿El comienzo de un nuevo culto mutante? Es primavera en Hi No Kuni, época de renovación y
+                            nuevos comienzos. Pero lo nuevo no siempre es mejor, a medida que la era oscura de Hisako se
+                            extiende... ¿Conseguirá Nico dar con ella antes de que sea demasiado tarde? ¿Y qué peligros
+                            aguardan a La Patrulla-X en el plano astral?</p>
+                    </div>
+                    <div id="detalles" class="detalles-panel">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px 30px;">
+                            <div>
+                                <p><strong>Editorial Original:</strong> Marvel Comics</p>
+                                <p><strong>Autor/es:</strong> Peach Momoko</p>
+                                <p><strong>Fecha de lanzamiento:</strong> 13 nov 2025</p>
+                                <p><strong>Idioma:</strong> Español</p>
+                                <p><strong>Páginas:</strong> 80</p>
+                                <p><strong>Tamaño:</strong> 17X26</p>
+                            </div>
+                            <div>
+                                <p><strong>Contiene:</strong> Ultimate X-Men 16-18</p>
+                                <p><strong>Formato:</strong> Comic-Book con lomo</p>
+                                <p><strong>Interior:</strong> Color</p>
+                                <p><strong>ISBN:</strong> 9772938823000600006</p>
+                                <p><strong>Enviado de:</strong> España - almacén 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <!-- Columna 1: Sobre nosotros -->
+            <div>
+                <h3>Sobre Universe Store</h3>
+                <p>Tu tienda especializada en cómics, juegos de mesa, juegos de rol, TCG's y accesorios.
+                    Donde la imaginación y la estrategia se encuentran.</p>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Córdoba, España</p>
+                <p><i class="fa-solid fa-envelope"></i> acl0040@universestore.com</p>
+                <p><i class="fa-solid fa-phone"></i> +34 111 222 333</p>
+            </div>
+
+            <!-- Columna 4: Redes sociales -->
+            <div>
+                <h3>Síguenos</h3>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Autoría -->
+        <div class="footer-bottom">
+            <p>© 2025 Universe Store — Diseñado por <strong>Alejandro Caballero Luque</strong></p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
 </body>
+
 </html>
