@@ -719,3 +719,115 @@ form input {
   font-weight: bold;
   font-size: 1.1em;
 }
+
+/* ------ EVENTO POKÉMON ------*/
+
+.container-evento {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.evento-imagen-principal {
+  flex: 1;
+  max-width: 550px;
+}
+
+.evento-imagen-principal img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.evento-info-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.evento-titulo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+}
+
+.evento-fecha-grande {
+  font-size: 3em;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.evento-boton-reserva {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+.evento-boton-reserva:hover {
+  background-color: #c62828;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(229, 57, 53, 0.4);
+}
+
+.evento-plazas {
+  font-size: 1em;
+  color: #666;
+  margin-top: -10px;
+}
+
+.evento-descripcion {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+  margin-top: 0;
+}
+
+.evento-descripcion h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.evento-descripcion p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1.05em;
+}
+
+.evento-descripcion ul {
+  margin-left: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.evento-descripcion ul li {
+  margin-bottom: 8px;
+}
+
+.evento-precio {
+  font-weight: bold;
+  color: #e53935;
+  font-size: 1.1em;
+}
+
+.evento-destacado {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
