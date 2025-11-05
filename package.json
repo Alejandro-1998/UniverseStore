@@ -5,9 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx --yes sass scss/main.scss public/css/main.css --no-source-map --style=compressed",
-    "dev": "npx sass --watch scss/main.scss public/css/main.css",
-    "watch:css": "npx sass --watch scss/main.scss public/css/main.css"
+    "build": "npx sass scss/main.scss public/css/main.css --no-source-map --style=compressed",
+    "dev": "npx sass --watch scss/main.scss public/css/main.css --no-source-map",
+    "watch:css": "npx sass --watch scss/main.scss public/css/main.css --no-source-map"
   },
   "repository": {
     "type": "git",
