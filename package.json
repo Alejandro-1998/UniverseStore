@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "sass scss/main.scss public/css/main.css --no-source-map --style=compressed",
-    "watch:css": "sass --watch scss/main.scss:public/css/main.css --style=expanded",
-    "build": "npm run build:css"
+    "build": "npx sass scss/main.scss public/css/main.css --no-source-map --style=compressed",
+    "watch:css": "npx sass --watch scss/main.scss public/css/main.css"
+
   },
   "repository": {
     "type": "git",
