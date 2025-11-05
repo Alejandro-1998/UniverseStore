@@ -1,0 +1,9 @@
+/* Personalizaciones menores o utilidades */
+.texto-destacado {
+  color: $color-principal;
+  font-weight: bold;
+}
+
+.shadow-suave {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
