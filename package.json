@@ -1,0 +1,29 @@
+{
+  "name": "universestore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx sass scss/main.scss public/css/main.css --no-source-map --style=compressed",
+    "dev": "npx sass --watch scss/main.scss public/css/main.css",
+    "watch:css": "npx sass --watch scss/main.scss public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandro-1998/UniverseStore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejandro-1998/UniverseStore/issues"
+  },
+  "homepage": "https://github.com/Alejandro-1998/UniverseStore#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}
