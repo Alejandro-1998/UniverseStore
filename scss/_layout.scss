@@ -1,0 +1,222 @@
+/* ======== RESETEO GENERAL ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-fondo;
+  color: $color-texto;
+  font-family: $font-family-base;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// ======= HEADER SUPERIOR =======
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+
+  .container-fluid {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .logo {
+    font-family: $font-family-base;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    span {
+      color: $color-texto;
+    }
+  }
+
+  // Input del buscador
+  input.form-control {
+    max-width: 500px;
+    height: 42px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+
+    &:focus {
+      border-color: $color-principal;
+      box-shadow: 0 0 0 0.15rem rgba($color-principal, 0.25);
+    }
+  }
+
+  // Alineación del contenido del header superior
+  .row {
+    align-items: center;
+  }
+
+  // Ajuste del logo para que no se vea aplastado
+  img {
+    width: 45px;
+    height: auto;
+  }
+}
+
+// ======= NAVBAR INFERIOR =======
+.navbar {
+  font-weight: 500;
+
+  .nav-link {
+    color: #fff !important;
+    transition: all 0.2s ease-in-out;
+    padding: 0.4rem 1rem;
+
+    &:hover {
+      background-color: lighten($primary, 8%);
+      color: #fff;
+      border-radius: 8px;
+    }
+
+    &.active {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  }
+
+  // Reducimos la altura visual del navbar
+  .container {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+// ======= BOTONES HEADER =======
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// ======== BOTÓN LOGIN PERSONALIZADO ========
+.btn-login {
+  background-color: $color-secundario !important;
+  color: $color-texto !important;
+  border: 1px solid darken($color-secundario, 10%) !important;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: lighten($color-secundario, 5%) !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// ======== BOTÓN CARRITO PERSONALIZADO ========
+.btn-carrito {
+  background-color: $color-principal !important;
+  color: white !important;
+  border: 1px solid darken($color-principal, 8%) !important;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: lighten($color-principal, 8%) !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: $color-footer-bg;
+  color: $color-footer-texto;
+  margin-top: 10px;
+  padding-top: 40px;
+  border-top: 4px solid $color-principal;
+  font-size: 0.95em;
+
+  .container-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 40px;
+
+    div {
+      flex: 1;
+      min-width: 220px;
+
+      h3 {
+        color: $color-principal;
+        font-size: 1.1em;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 8px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          margin: 6px 0;
+
+          a {
+            color: $color-footer-texto;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $color-principal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+
+    a {
+      color: #fff;
+      background-color: $color-principal;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    background-color: #111;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.9em;
+    color: #bbb;
+  }
+}
