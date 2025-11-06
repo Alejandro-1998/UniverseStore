@@ -1,0 +1,65 @@
+.container-registro {
+  min-height: 100vh;
+
+  .seccion-izquierda {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 2rem;
+
+    img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 2.3rem;
+
+      span {
+        color: $primary;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .seccion-derecha {
+    background-color: #fff;
+  }
+
+  .registro-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+
+    .form-control {
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+    }
+
+    .btn-primary {
+      background-color: $primary;
+      border: none;
+      border-radius: 50px;
+      padding: 0.75rem;
+      font-weight: 600;
+
+      &:hover {
+        background-color: darken($primary, 8%);
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
