@@ -1,38 +1,38 @@
 .container-registro {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
   .row {
     width: 100%;
-    max-width: 1200px;
-    min-height: 80vh;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    margin: 0;
+    --bs-gutter-x: 0;
   }
 
   .seccion-izquierda {
     background-color: #d7443e;
     color: #fff;
-    text-align: center;
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
 
     img {
-      width: 120px;
+      width: 100px;
       margin-bottom: 2rem;
     }
 
     h1 {
+      font-size: 2.5rem;
       font-weight: 800;
-      font-size: 2.8rem;
-      line-height: 1.2;
+      margin-bottom: 1rem;
 
       span {
         color: #000;
@@ -40,10 +40,8 @@
     }
 
     p {
-      font-size: 1.1rem;
-      color: #f9f9f9;
-      margin-top: 1rem;
       max-width: 400px;
+      font-size: 1.1rem;
     }
   }
 
@@ -52,14 +50,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 3rem;
+    height: 100%;
+    width: 50%;
   }
 
   .registro-container {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 2.5rem;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
 
     .form-control {
@@ -82,8 +79,8 @@
     }
 
     a {
-      text-decoration: none;
       color: #d7443e;
+      text-decoration: none;
 
       &:hover {
         text-decoration: underline;
