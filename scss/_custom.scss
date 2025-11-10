@@ -7,3 +7,26 @@
 .shadow-suave {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Botón de música ambiente */
+.music-control-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1040;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+
+  &:hover {
+    background-color: lighten($color-principal, 8%) !important;
+    border-color: lighten($color-principal, 8%) !important;
+  }
+
+  &:active, &:focus {
+    box-shadow: 0 0 0 0.25rem rgba($color-principal, 0.5) !important;
+  }
+}

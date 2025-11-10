@@ -12092,6 +12092,27 @@ footer .footer-bottom {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Botón de música ambiente */
+.music-control-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1040;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.music-control-btn:hover {
+  background-color: rgb(233.6526315789, 92.4315789474, 89.1473684211) !important;
+  border-color: rgb(233.6526315789, 92.4315789474, 89.1473684211) !important;
+}
+.music-control-btn:active, .music-control-btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(229, 57, 53, 0.5) !important;
+}
+
 main {
   background-color: #f9f9f9;
   color: #333;
