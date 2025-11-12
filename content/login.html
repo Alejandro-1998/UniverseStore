@@ -12,50 +12,58 @@
 </head>
 
 <body>
-  <div class="container-fluid container-login p-0">
-    <!-- Izquierda -->
-    <div class="col-12 col-md-6 seccion-izquierda">
-      <img src="../img/logo.png" alt="Logo">
-      <h1>Universe<br><span>Store</span></h1>
-    </div>
+<div class="container-fluid p-0">
+    <div class="row g-0 min-vh-100">
+      
+      <div class="col-md-6 bg-danger text-white d-flex flex-column justify-content-center align-items-center p-5 d-none d-md-flex">
+        <img src="../img/logo.png" alt="Logo" class="logo-img-custom mb-5">
+        <h1 class="display-4 fw-bold text-center">Universe<br><span class="text-dark">Store</span></h1>
+      </div>
 
-    <!-- Derecha -->
-    <div class="col-12 col-md-6 seccion-derecha">
-      <div class="login-container">
-        <h1 class="text-center fw-bold mb-5">¡Bienvenido!</h1>
+      <div class="col-md-6 bg-white d-flex justify-content-center align-items-center p-5">
+        <div class="login-container-custom">
+          <h1 class="text-center fw-bold mb-5">¡Bienvenido!</h1>
 
-        <form>
-          <div class="mb-3">
-            <label for="email" class="form-label">Correo electrónico o teléfono</label>
-            <input type="text" id="email" class="form-control" placeholder="Escribe tu correo electrónico o teléfono"
-              required>
-          </div>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico o teléfono</label>
+              <input type="text" id="email" class="form-control rounded-pill py-2" placeholder="Escribe tu correo electrónico o teléfono" required>
+            </div>
 
-          <div class="mb-3">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" id="password" class="form-control" placeholder="Escribe tu contraseña" required>
-          </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" id="password" class="form-control rounded-pill py-2" placeholder="Escribe tu contraseña" required>
+            </div>
 
-          <a href="#" class="olvidar">¿Has olvidado la contraseña?</a>
+            <a href="#" class="d-block text-end small text-muted mb-4 text-decoration-none">¿Has olvidado la contraseña?</a>
 
-          <button type="button" class="btnIniciarSesion" data-bs-toggle="modal" data-bs-target="#modalLoginExito">
-            Inicia sesión
-          </button>
+            <button type="button" class="btn btn-danger w-100 rounded-pill py-2 fs-5 fw-bold" data-bs-toggle="modal" data-bs-target="#modalLoginExito">
+              Inicia sesión
+            </button>
 
-          <div class="otraCuenta">
-            <span>o inicia sesión mediante otra cuenta</span>
-          </div>
+            <div class="d-flex align-items-center my-4">
+              <hr class="flex-grow-1">
+              <span class="px-3 text-muted small">o inicia sesión mediante otra cuenta</span>
+              <hr class="flex-grow-1">
+            </div>
 
-          <div class="redesSociales">
-            <button class="social"><i class="fa-brands fa-google"></i></button>
-            <button class="social"><i class="fa-brands fa-apple"></i></button>
-            <button class="social"><i class="fa-brands fa-facebook-f"></i></button>
-          </div>
+            <div class="d-flex justify-content-center mb-4 gap-3">
+              <button class="btn btn-light rounded-circle text-danger d-flex align-items-center justify-content-center shadow-sm" type="button" style="width: 48px; height: 48px; font-size: 22px;">
+                <i class="fa-brands fa-google"></i>
+              </button>
+              <button class="btn btn-light rounded-circle text-danger d-flex align-items-center justify-content-center shadow-sm" type="button" style="width: 48px; height: 48px; font-size: 22px;">
+                <i class="fa-brands fa-apple"></i>
+              </button>
+              <button class="btn btn-light rounded-circle text-danger d-flex align-items-center justify-content-center shadow-sm" type="button" style="width: 48px; height: 48px; font-size: 22px;">
+                <i class="fa-brands fa-facebook-f"></i>
+              </button>
+            </div>
 
-          <p class="registro">
-            ¿No tienes cuenta? <a href="registro.html">Regístrate</a>
-          </p>
-        </form>
+            <p class="text-center small">
+              ¿No tienes cuenta? <a href="registro.html" class="text-danger fw-semibold text-decoration-none">Regístrate</a>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   </div>
