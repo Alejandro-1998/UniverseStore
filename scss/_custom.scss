@@ -30,3 +30,58 @@
     box-shadow: 0 0 0 0.25rem rgba($color-principal, 0.5) !important;
   }
 }
+
+/* ESTILO MODAL PERSONALIZADO */
+.modal-custom-brand {
+
+  .modal-header {
+    background-color: #d7443e; 
+    color: #fff;
+    border-bottom: none;
+
+    .modal-title {
+      font-weight: 600;
+    }
+    
+    .btn-close {
+      filter: invert(1) grayscale(100%) brightness(200%);
+    }
+  }
+
+  .modal-body {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+
+    .modal-icon {
+      font-size: 4.5rem;
+      color: #d7443e;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #333;
+      margin: 0;
+    }
+  }
+
+  .modal-footer {
+    border-top: 1px solid #eee;
+    justify-content: center;
+
+    .btn-modal-brand {
+      background-color: #d7443e;
+      border-color: #d7443e;
+      color: #fff;
+      padding: 0.6rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: darken(#d7443e, 8%);
+        border-color: darken(#d7443e, 8%);
+      }
+    }
+  }
+}

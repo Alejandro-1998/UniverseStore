@@ -1,10 +1,7 @@
-// Importar variables primero
 @import "variables";
 
-// Importar Bootstrap (usa tus variables antes de esto)
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Importar tus propios estilos
 @import "layout";
 @import "components";
 @import "custom";

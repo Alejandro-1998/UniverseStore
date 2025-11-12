@@ -53,12 +53,39 @@
               </label>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalRegistroExito">
+              Registrarse
+            </button>
 
             <p class="text-center mt-3">
               ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a>
             </p>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Bootstrap -->
+  <div class="modal fade" id="modalRegistroExito" tabindex="-1" aria-labelledby="modalRegistroLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      
+      <div class="modal-content modal-custom-brand">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRegistroLabel">¡Registro completado!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+          <i class="fa-solid fa-circle-check modal-icon"></i>
+          <p>Tu cuenta ha sido creada con éxito. ¡Bienvenido a Universe Store!</p>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn-modal-brand" onclick="window.location.href='../index.html'">
+            Empezar a comprar
+          </button>
         </div>
       </div>
     </div>

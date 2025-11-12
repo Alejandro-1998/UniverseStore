@@ -5,108 +5,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alejandro Caballero Luque">
-    <title>Universe Store</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Cesta y Pago - Universe Store</title>
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" type="image/x-icon" href="../ico/logoUniverseStore.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Agregar iconos -->
 </head>
 
-<body>
-    <header>
-        <!-- Logo -->
-        <div class="container-header">
-            <div class="logo-nombre">
-                <a href="../index.html"><img src="../../img/logo.png" alt="Logo Universe Store"></a>
-                <a href="../index.html"><div class="logo">Universe <span>Store</span></div></a>
-            </div>
-            <!-- Barra de búsqueda -->
-            <div>
-                <input type="text" placeholder="Buscar en toda la tienda...">
-            </div>
-            <!-- Botones de cesta y login -->
-            <div class="carrito-login">
-                <button class="carrito"><i class="fa-solid fa-cart-shopping"></i></button>
-                <a href="login.html"><button class="login"><i class="fa-solid fa-user"></i></button></a>
+<body class="bg-body-tertiary">
+
+    <header class="border-bottom">
+        <!-- Sección superior -->
+        <div class="container-fluid bg-white py-3 border-bottom">
+            <div class="row align-items-center justify-content-between px-4 g-3">
+
+                <!-- Logo -->
+                <div
+                    class="col-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                    <a href="../index.html"><img src="../img/logo.png" alt="Logo Universe Store"
+                            style="width: 45px; height: auto;"></a>
+                    <a href="../index.html" class="logo fw-bold fs-4 text-primary text-decoration-none">
+                        Universe <span class="text-dark">Store</span>
+                    </a>
+                </div>
+
+                <!-- Buscador -->
+                <div class="col-12 col-md-5 header-buscador">
+                    <input type="text" class="form-control rounded-pill px-3" placeholder="Buscar en toda la tienda...">
+                </div>
+
+                <!-- Botones -->
+                <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="cesta.html"
+                        class="btn btn-carrito rounded-circle d-flex align-items-center justify-content-center"
+                        style="width:45px; height:45px;">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a href="login.html"
+                        class="btn btn-login rounded-circle d-flex align-items-center justify-content-center"
+                        style="width:45px; height:45px;">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- Menú de navegación -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li>Novedades</li>
-                <li>Ofertas</li>
-                <li><a href="productos/productos_comic.html">Cómics</a></li>
-                <li>Juegos de Tablero</li>
-                <li>Juegos de Rol</li>
-                <li>TCG's</li>
-                <li>Accesorios</li>
-            </ul>
+        <!-- Menú de navegación inferior -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container justify-content-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTienda"
+                    aria-controls="navbarTienda" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTienda">
+                    <ul class="navbar-nav gap-3 text-center">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos/productos_comic.html">Cómics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Juegos de Tablero</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Juegos de Rol</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">TCG's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
 
-        <!-- Carrito -->
-        <div class="container-carrito">
-            <h1 class="titulo-carrito">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Tu Carrito
-            </h1>
+    <main class="container py-5">
+        <div class="row g-4">
 
-            <a href="productos/comic.html">
-                <div class="carrito-item">
-                    <img src="../img/ultimateXmen06.png"
-                        alt="Ultimate X-Men 06" class="item-imagen">
-                    <div class="item-info">
-                        <div class="item-titulo">ULTIMATE X-MEN 06</div>
-                        <div class="item-descripcion">La Patrulla-X se enfrenta a Magneto mientras toman decisiones
-                            difíciles sobre proteger a una joven mutante.</div>
-                        <div class="item-precio">8,95€</div>
+            <div class="col-lg-7">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white py-3 fw-bold d-flex align-items-center">
+                        <i class="bi bi-truck me-2"></i> Detalles de Envío y Pago
                     </div>
-                    <div class="item-acciones">
-                        <button class="btn-quitar">Quitar</button>
-                    </div>
-                </div>
-            </a>
+                    <div class="card-body p-4">
+                        <h5 class="mb-3">Dirección de Envío</h5>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="apellidos" class="form-label fw-semibold">Apellidos</label>
+                                <input type="text" class="form-control" id="apellidos" placeholder="Tus apellidos">
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="tu@email.com">
+                            </div>
+                            <div class="col-12">
+                                <label for="direccion" class="form-label fw-semibold">Dirección</label>
+                                <input type="text" class="form-control" id="direccion"
+                                    placeholder="Calle, número, piso..">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="ciudad" class="form-label fw-semibold">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" placeholder="Ej. Córdoba">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="provincia" class="form-label fw-semibold">Provincia</label>
+                                <select class="form-select" id="provincia">
+                                    <option selected>Elegir...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="codigoPostal" class="form-label fw-semibold">Código Postal</label>
+                                <input type="text" class="form-control" id="codigoPostal" placeholder="14001">
+                            </div>
+                        </div>
 
-            <div class="carrito-item">
-                <img src="../img/increibleHulk26.png"
-                    alt="El Increíble Hulk" class="item-imagen">
-                <div class="item-info">
-                    <div class="item-titulo">EL INCREÍBLE HULK 26 (156)</div>
-                    <div class="item-descripcion">La relación entre Hulk y Charlie se ve amenazada cuando ella descubre
-                        la verdad detrás del Hulkscape, mientras el Soldado de Invierno busca respuestas.</div>
-                    <div class="item-precio">8,95€</div>
-                </div>
-                <div class="item-acciones">
-                    <button class="btn-quitar">Quitar</button>
+                        <h5 class="mb-3">Información de Pago</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombreTarjeta" class="form-label fw-semibold">Nombre en la tarjeta</label>
+                                <input type="text" class="form-control" id="nombreTarjeta"
+                                    placeholder="Nombre completo tal como aparece en la tarjeta">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="numeroTarjeta" class="form-label fw-semibold">Número de tarjeta</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="numeroTarjeta"
+                                        placeholder="0000 0000 0000 0000">
+                                    <span class="input-group-text"><i class="bi bi-credit-card"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="vencimiento" class="form-label fw-semibold">Vencimiento</label>
+                                <input type="text" class="form-control" id="vencimiento" placeholder="MMAA">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cvv" class="form-label fw-semibold">CVV</label>
+                                <input type="text" class="form-control" id="cvv" placeholder="123">
+                            </div>
+                            <div class="col-md-6 text-md-end align-self-center">
+                                <small class="text-muted">Visa / Mastercard / Amex</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="carrito-item">
-                <img src="../img/daredevil23.png"
-                    alt="Daredevil 23" class="item-imagen">
-                <div class="item-info">
-                    <div class="item-titulo">DAREDEVIL 23 (70)</div>
-                    <div class="item-descripcion">Matt Murdock, convertido en líder de La Mano, desata una guerra en
-                        Hell's Kitchen que obliga a los héroes urbanos a enfrentarse a su oscuro legado.</div>
-                    <div class="item-precio">8,95€</div>
-                </div>
-                <div class="item-acciones">
-                    <button class="btn-quitar">Quitar</button>
-                </div>
-            </div>
+            <div class="col-lg-5">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white py-3 fw-bold d-flex align-items-center">
+                        <i class="bi bi-receipt me-2"></i> Resumen del Pedido
+                    </div>
+                    <div class="card-body p-4">
 
-            <!-- Botón Seguir con la compra -->
-            <div class="contenedor-boton-seguir">
-                <button class="btn-compra">
-                    Seguir con la compra
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item d-flex align-items-center px-0">
+                                <img src="https://via.placeholder.com/40" alt="Producto" class="rounded me-3"
+                                    style="width: 40px; height: 40px; object-fit: cover;">
+                                <div class="grow">
+                                    <div class="fw-bold">ULTIMATE X-MEN 06</div>
+                                    <small class="text-muted">Comic: 1 | Cant: 1</small>
+                                </div>
+                                <div class="fw-bold ms-3">8,95€</div>
+                                <button type="button" class="btn-close ms-3" aria-label="Close"></button>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0">
+                                <img src="https://via.placeholder.com/40" alt="Producto" class="rounded me-3"
+                                    style="width: 40px; height: 40px; object-fit: cover;">
+                                <div class="grow">
+                                    <div class="fw-bold">EL INCREIBLE HULK 28 (158)</div>
+                                    <small class="text-muted">Comic: 2 | Cant: 1</small>
+                                </div>
+                                <div class="fw-bold ms-3">8,95€</div>
+                                <button type="button" class="btn-close ms-3" aria-label="Close"></button>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0">
+                                <img src="https://via.placeholder.com/40" alt="Producto" class="rounded me-3"
+                                    style="width: 40px; height: 40px; object-fit: cover;">
+                                <div class="grow">
+                                    <div class="fw-bold">DAREDEVIL 23 (70)</div>
+                                    <small class="text-muted">Comic: 3 | Cant: 1</small>
+                                </div>
+                                <div class="fw-bold ms-3">8,95€</div>
+                                <button type="button" class="btn-close ms-3" aria-label="Close"></button>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex justify-content-between py-1">
+                            <span class="text-muted">Subtotal</span>
+                            <span>26,85€</span>
+                        </div>
+                        <div class="d-flex justify-content-between py-1 mb-3">
+                            <span class="text-muted">Envío</span>
+                            <span>3,50€</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between pt-3 border-top mt-2 fw-bold text-danger fs-5">
+                            <span>Total (IVA incl.)</span>
+                            <span>30,35€</span>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button
+                                class="btn btn-danger btn-lg fw-bold d-flex align-items-center justify-content-center w-100 rounded-pill"
+                                type="button">
+                                <i class="bi bi-lock-fill me-2"></i>
+                                Finalizar Pedido
+                                <span class="ms-2">(30,35€)</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="container-footer">
             <!-- Columna 1: Sobre nosotros -->
@@ -149,7 +260,8 @@
 
         <!-- Autoría -->
         <div class="footer-bottom">
-            <a class="cc" href="https://creativecommons.org">Universe Store</a> © 2025 by <a href="https://creativecommons.org">Alejandro
+            <a class="cc" href="https://creativecommons.org">Universe Store</a> © 2025 by <a
+                href="https://creativecommons.org">Alejandro
                 Caballero</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
                 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""
                 style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
