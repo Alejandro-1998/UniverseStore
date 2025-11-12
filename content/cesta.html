@@ -86,35 +86,36 @@
                         <div class="row g-3 mb-4">
                             <div class="col-md-6">
                                 <label for="nombre" class="form-label fw-semibold">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                                <input type="text" class="form-control bg-white" id="nombre" placeholder="Tu nombre">
                             </div>
                             <div class="col-md-6">
                                 <label for="apellidos" class="form-label fw-semibold">Apellidos</label>
-                                <input type="text" class="form-control" id="apellidos" placeholder="Tus apellidos">
+                                <input type="text" class="form-control bg-white" id="apellidos"
+                                    placeholder="Tus apellidos">
                             </div>
                             <div class="col-12">
                                 <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="email" placeholder="tu@email.com">
+                                <input type="email" class="form-control bg-white" id="email" placeholder="tu@email.com">
                             </div>
                             <div class="col-12">
                                 <label for="direccion" class="form-label fw-semibold">Dirección</label>
-                                <input type="text" class="form-control" id="direccion"
+                                <input type="text" class="form-control bg-white" id="direccion"
                                     placeholder="Calle, número, piso..">
                             </div>
                             <div class="col-md-4">
                                 <label for="ciudad" class="form-label fw-semibold">Ciudad</label>
-                                <input type="text" class="form-control" id="ciudad" placeholder="Ej. Córdoba">
+                                <input type="text" class="form-control bg-white" id="ciudad" placeholder="Ej. Córdoba">
                             </div>
                             <div class="col-md-4">
                                 <label for="provincia" class="form-label fw-semibold">Provincia</label>
-                                <select class="form-select" id="provincia">
+                                <select class="form-select bg-white" id="provincia">
                                     <option selected>Elegir...</option>
                                     <option>...</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
                                 <label for="codigoPostal" class="form-label fw-semibold">Código Postal</label>
-                                <input type="text" class="form-control" id="codigoPostal" placeholder="14001">
+                                <input type="text" class="form-control bg-white" id="codigoPostal" placeholder="14001">
                             </div>
                         </div>
 
@@ -122,24 +123,25 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="nombreTarjeta" class="form-label fw-semibold">Nombre en la tarjeta</label>
-                                <input type="text" class="form-control" id="nombreTarjeta"
+                                <input type="text" class="form-control bg-white" id="nombreTarjeta"
                                     placeholder="Nombre completo tal como aparece en la tarjeta">
                             </div>
                             <div class="col-md-6">
                                 <label for="numeroTarjeta" class="form-label fw-semibold">Número de tarjeta</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="numeroTarjeta"
+                                    <input type="text" class="form-control bg-white" id="numeroTarjeta"
                                         placeholder="0000 0000 0000 0000">
-                                    <span class="input-group-text"><i class="bi bi-credit-card"></i></span>
+                                    <span class="input-group-text bg-white"><i
+                                            class="fa-solid fa-credit-card"></i></span>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <label for="vencimiento" class="form-label fw-semibold">Vencimiento</label>
-                                <input type="text" class="form-control" id="vencimiento" placeholder="MMAA">
+                                <input type="text" class="form-control bg-white" id="vencimiento" placeholder="MMAA">
                             </div>
                             <div class="col-md-3">
                                 <label for="cvv" class="form-label fw-semibold">CVV</label>
-                                <input type="text" class="form-control" id="cvv" placeholder="123">
+                                <input type="text" class="form-control bg-white" id="cvv" placeholder="123">
                             </div>
                             <div class="col-md-6 text-md-end align-self-center">
                                 <small class="text-muted">Visa / Mastercard / Amex</small>
@@ -157,36 +159,55 @@
                     <div class="card-body p-4">
 
                         <ul class="list-group list-group-flush mb-4">
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <img src="https://via.placeholder.com/40" alt="Producto" class="rounded me-3"
-                                    style="width: 40px; height: 40px; object-fit: cover;">
-                                <div class="grow">
-                                    <div class="fw-bold">ULTIMATE X-MEN 06</div>
-                                    <small class="text-muted">Comic: 1 | Cant: 1</small>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="../img/ultimateXmen06.png" alt="Producto" class="rounded me-3"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <div>
+                                        <div class="fw-bold">ULTIMATE X-MEN 06</div>
+                                        <small class="text-muted">Comic: 1 | Cant: 1</small>
+                                    </div>
                                 </div>
-                                <div class="fw-bold ms-3">8,95€</div>
-                                <button type="button" class="btn-close ms-3" aria-label="Close"></button>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <img src="https://via.placeholder.com/40" alt="Producto" class="rounded me-3"
-                                    style="width: 40px; height: 40px; object-fit: cover;">
-                                <div class="grow">
-                                    <div class="fw-bold">EL INCREIBLE HULK 28 (158)</div>
-                                    <small class="text-muted">Comic: 2 | Cant: 1</small>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="fw-bold me-3">8,95€</div>
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
                                 </div>
-                                <div class="fw-bold ms-3">8,95€</div>
-                                <button type="button" class="btn-close ms-3" aria-label="Close"></button>
                             </li>
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <img src="https://via.placeholder.com/40" alt="Producto" class="rounded me-3"
-                                    style="width: 40px; height: 40px; object-fit: cover;">
-                                <div class="grow">
-                                    <div class="fw-bold">DAREDEVIL 23 (70)</div>
-                                    <small class="text-muted">Comic: 3 | Cant: 1</small>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="../img/increibleHulk26.png" alt="Producto" class="rounded me-3"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <div>
+                                        <div class="fw-bold">EL INCREIBLE HULK 28 (158)</div>
+                                        <small class="text-muted">Comic: 2 | Cant: 1</small>
+                                    </div>
                                 </div>
-                                <div class="fw-bold ms-3">8,95€</div>
-                                <button type="button" class="btn-close ms-3" aria-label="Close"></button>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="fw-bold me-3">8,95€</div>
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
                             </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="../img/daredevil23.png" alt="Producto" class="rounded me-3"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <div>
+                                        <div class="fw-bold">DAREDEVIL 23 (70)</div>
+                                        <small class="text-muted">Comic: 3 | Cant: 1</small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="fw-bold me-3">8,95€</div>
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
+                            </li>
+
                         </ul>
 
                         <div class="d-flex justify-content-between py-1">
@@ -206,7 +227,7 @@
                         <div class="d-grid gap-2 mt-4">
                             <button
                                 class="btn btn-danger btn-lg fw-bold d-flex align-items-center justify-content-center w-100 rounded-pill"
-                                type="button">
+                                type="button" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
                                 <i class="bi bi-lock-fill me-2"></i>
                                 Finalizar Pedido
                                 <span class="ms-2">(30,35€)</span>
@@ -273,6 +294,34 @@
                 style="max-width: 1em;max-height:1em;margin-left: .2em;">
         </div>
     </footer>
+
+    <!-- Modal de Bootstrap -->
+    <div class="modal fade" id="modalCompraExito" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content modal-custom-brand">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCompraLabel">¡Compra Realizada!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <i class="fa-solid fa-circle-check modal-icon"></i>
+                    <p>Tu pedido ha sido procesado correctamente.</p>
+                    <p class="small text-muted">¡Gracias por confiar en Universe Store!</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal-brand" onclick="window.location.href='../index.html'">
+                        Seguir comprando
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
