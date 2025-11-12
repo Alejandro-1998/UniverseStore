@@ -1,3 +1,4 @@
+@import "reseteo";
 @import "variables";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -9,3 +10,6 @@
 @import "pages/login";
 @import "pages/registro";
 @import "pages/evento";
+@import "pages/comunidad";
+@import "pages/productosComics";
+@import "pages/comic";
