@@ -70,6 +70,39 @@ main {
     }
   }
 
+  // ======== SLIDERS ========
+  .carousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item .banner {
+    height: 100%;
+    width: 100%;
+  }
+
+  .banners-izquierda .carousel {
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .banner-derecha .carousel {
+    height: 520px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .carousel-item .banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .carousel-item .titulo-banner {
+    z-index: 10;
+  }
+
   // ======== COMUNIDAD ========
   .titulo-comunidad {
     background: linear-gradient(135deg, #333 0%, #e53935 100%);

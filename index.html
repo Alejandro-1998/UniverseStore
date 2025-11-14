@@ -73,22 +73,129 @@
     </header>
     <main>
         <section class="banners">
-            <!-- Columna izquierda -->
+            
             <div class="banners-izquierda">
-                <div class="banner">
-                    <img src="img/mansiones.png" alt="Ofertas">
-                    <h2 class="titulo-banner">OFERTAS</h2>
+                
+                <div id="sliderOfertas" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#sliderOfertas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#sliderOfertas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#sliderOfertas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <div class="banner">
+                                <img src="img/mansiones.png" alt="Ofertas - Mansiones de la Locura">
+                                <h2 class="titulo-banner">OFERTAS</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="banner">
+                                <img src="img/dyd.png" alt="Ofertas - Dungeons & Dragons">
+                                <h2 class="titulo-banner">OFERTAS</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="banner">
+                                <img src="img/vanguard.png" alt="Ofertas - Vanguard">
+                                <h2 class="titulo-banner">OFERTAS</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sliderOfertas" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sliderOfertas" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
-                <div class="banner">
-                    <img src="img/dyd.png" alt="Destacados">
-                    <h2 class="titulo-banner">DESTACADOS</h2>
+
+                <div id="sliderDestacados" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#sliderDestacados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#sliderDestacados" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#sliderDestacados" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4700">
+                            <div class="banner">
+                                <img src="img/dyd.png" alt="Destacados - Dungeons & Dragons">
+                                <h2 class="titulo-banner">DESTACADOS</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4700">
+                            <div class="banner">
+                                <img src="img/mansiones.png" alt="Destacados - Mansiones de la Locura">
+                                <h2 class="titulo-banner">DESTACADOS</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4700">
+                            <div class="banner">
+                                <img src="img/vanguard.png" alt="Destacados - Vanguard">
+                                <h2 class="titulo-banner">DESTACADOS</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sliderDestacados" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sliderDestacados" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
+
             </div>
 
-            <!-- Columna derecha -->
-            <div class="banner-derecha banner">
-                <img src="img/vanguard.png" alt="Novedades">
-                <h2 class="titulo-banner">NOVEDADES</h2>
+            <div class="banner-derecha">
+                
+                <div id="sliderNovedades" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#sliderNovedades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#sliderNovedades" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#sliderNovedades" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5300">
+                            <div class="banner">
+                                <img src="img/vanguard.png" alt="Novedades - Vanguard">
+                                <h2 class="titulo-banner">NOVEDADES</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5300">
+                            <div class="banner">
+                                <img src="img/mansiones.png" alt="Novedades - Mansiones de la Locura">
+                                <h2 class="titulo-banner">NOVEDADES</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5300">
+                            <div class="banner">
+                                <img src="img/dyd.png" alt="Novedades - Dungeons & Dragons">
+                                <h2 class="titulo-banner">NOVEDADES</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sliderNovedades" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sliderNovedades" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
             </div>
         </section>
 
